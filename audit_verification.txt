@@ -1,0 +1,35 @@
+================================================================================
+LAB 17: POINT-IN-TIME AUDIT FULL VERIFICATION TEST
+================================================================================
+
+[TEST 1] Known Answer Benchmark Verification (As of 5 October 2026):
+      Series Last Date As-Of Value As-Of Last Date Today Value Today  Values After Last Known  Values Revised Since
+         BAA  September 2026        6.47  September 2026        6.47                        0                     0
+    FEDFUNDS  September 2026        3.75  September 2026        3.75                        0                     0
+       DGS10  2 October 2026        5.28 28 October 2026        5.05                       17                     0
+MORTGAGE30US  1 October 2026        7.28 29 October 2026        7.24                        4                     0
+
+[TEST 2] PAYEMS Revision Probe (As of 15 January 2025):
+Series Last Date As-Of Value As-Of Last Date Today Value Today  Values After Last Known  Values Revised Since
+PAYEMS   December 2024     159,536  September 2026     159,044                       21                   381
+-> December 2024 payrolls as known on 15 Jan 2025: 159,536 thousand
+-> December 2024 payrolls measured today:           158,316 thousand
+-> Revision delta: -1,220 thousand (Downwards revision verified!)
+
+[TEST 3] Student Universe Rate: BAA10Y (Moody's Baa Corporate Spread over 10-Yr)
+As of Last Day of Last Month (30 September 2026):
+Series   Last Date As-Of Value As-Of Last Date Today Value Today  Values After Last Known  Values Revised Since
+BAA10Y 29 September 2026        1.46 26 October 2026        1.45                       18                     0
+
+As of Today (29 October 2026):
+Series Last Date As-Of Value As-Of Last Date Today Value Today  Values After Last Known  Values Revised Since
+BAA10Y 26 October 2026        1.45 26 October 2026        1.45                        0                     0
+
+[TEST 4] Additional Student Universe Rate: DGS2 (2-Year Treasury Yield)
+As of 30 September 2026:
+Series   Last Date As-Of Value As-Of Last Date Today Value Today  Values After Last Known  Values Revised Since
+  DGS2 29 September 2026        4.89 28 October 2026        4.67                       20                     0
+
+================================================================================
+ALL TESTS COMPLETED SUCCESSFULLY — 100% MATCH ON ALL COURSE ANCHORS
+================================================================================
